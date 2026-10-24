@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+
+body {
+    background-color: #f7c6d8;
+    background-image: url('gulab jamun.jpg');
+    background-size: 45px;
+    background-repeat: repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 15px;
+
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    background-color: pink;
+}
+
+.gif {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    position: relative;
+    height: 50px;
+}
+
+.btn a,
+.btn button {
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background: white;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.15s ease;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.yes-btn {
+    position: relative;
+    z-index: 10;
+}
+
+.no-btn {
+    position: absolute;
+    z-index: 5;
+}
+.tenor-gif-embed {
+    width: 160px !important;
+    margin: 0 auto 20px;
+}
+
+/* Mobile specific */
+@media (max-width: 480px) {
+    .gif {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .btn a,
+    .btn button {
+        padding: 11px 24px;
+        font-size: 15px;
+    }
+}
